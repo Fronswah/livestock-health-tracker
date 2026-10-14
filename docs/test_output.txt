@@ -1,0 +1,21 @@
+test_age (tests.test_livestock.AnimalTests.test_age) ... ok
+test_attributes_are_cleaned (tests.test_livestock.AnimalTests.test_attributes_are_cleaned) ... ok
+test_bad_event_type (tests.test_livestock.AnimalTests.test_bad_event_type) ... ok
+test_class_methods (tests.test_livestock.AnimalTests.test_class_methods) ... ok
+test_inactive_animal_has_no_check_due (tests.test_livestock.AnimalTests.test_inactive_animal_has_no_check_due) ... ok
+test_invalid_values_are_rejected (tests.test_livestock.AnimalTests.test_invalid_values_are_rejected) ... ok
+test_needs_check (tests.test_livestock.AnimalTests.test_needs_check) ... ok
+test_record_event_and_privacy (tests.test_livestock.AnimalTests.test_record_event_and_privacy) ... ok
+test_static_methods (tests.test_livestock.AnimalTests.test_static_methods) ... ok
+test_update_weight (tests.test_livestock.AnimalTests.test_update_weight) ... ok
+test_animals_due_for_check (tests.test_livestock.FarmTests.test_animals_due_for_check) ... ok
+test_duplicate_tag_rejected (tests.test_livestock.FarmTests.test_duplicate_tag_rejected) ... ok
+test_farm_attributes (tests.test_livestock.FarmTests.test_farm_attributes) ... ok
+test_get_animal_is_case_insensitive (tests.test_livestock.FarmTests.test_get_animal_is_case_insensitive) ... ok
+test_objects_interact (tests.test_livestock.FarmTests.test_objects_interact) ... ok
+test_registry_is_a_dictionary (tests.test_livestock.FarmTests.test_registry_is_a_dictionary) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.001s
+
+OK

@@ -1,0 +1,69 @@
+
+==========================================================================
+STEP 1 - Create a Farm object
+==========================================================================
+Created farm FARM-BO-01 in Bo district.
+
+==========================================================================
+STEP 2 - Create Animal objects (constructor and class method)
+==========================================================================
+Created with the constructor     : SL-CTL-001 - cattle (Ndama)
+Created with Animal.from_csv_line: SL-GT-002 - goat (West African Dwarf)
+Created with Animal.from_csv_line: SL-SHP-003 - sheep (Djallonke)
+Created with Animal.from_csv_line: SL-PIG-004 - pig (Large White)
+Created with Animal.from_csv_line: SL-CTL-005 - cattle (Ndama)
+Animal.total_registered() -> 5
+
+==========================================================================
+STEP 3 - Data structure: dictionary registry (add and display)
+==========================================================================
+Duplicate blocked  -> Tag SL-CTL-001 is already registered.
+Bad species blocked -> Species must be one of: cattle, goat, sheep, pig, poultry.
+TAG ID       SPECIES  BREED               SEX  AGE     WEIGHT    STATUS
+--------------------------------------------------------------------------
+SL-CTL-001   cattle   Ndama               F    5 yr    260.0 kg  active
+SL-CTL-005   cattle   Ndama               M    6 yr    310.0 kg  active
+SL-GT-002    goat     West African Dwarf  F    3 yr    24.5 kg   active
+SL-PIG-004   pig      Large White         F    2 yr    85.0 kg   active
+SL-SHP-003   sheep    Djallonke           M    4 yr    35.0 kg   active
+--------------------------------------------------------------------------
+Total records: 5
+
+==========================================================================
+STEP 4 - Objects interact: Farm asks Animal to record events
+==========================================================================
+Events recorded. The phone number in the note was hidden for privacy:
+Tag ID   : SL-CTL-001
+Animal   : Cattle (Ndama), female
+Age      : 5 years (born 2021)
+Weight   : 260.0 kg
+Status   : active
+Check due: No
+Health history:
+  2026-03-02  vaccination   Routine vaccination round
+  2026-08-20  health check  Vet visit, call [removed] if needed
+
+==========================================================================
+STEP 5 - Instance methods: update weight and change status
+==========================================================================
+SL-GT-002 weight: 24.5 kg -> 26.0 kg
+SL-PIG-004 status is now: sold
+
+==========================================================================
+STEP 6 - Animals due for a health check
+==========================================================================
+DUE: SL-CTL-005 - cattle (Ndama)  (last event: 2026-01-10)
+DUE: SL-SHP-003 - sheep (Djallonke)  (last event: 2025-11-15)
+
+==========================================================================
+STEP 7 - Farm summary
+==========================================================================
+Farm code : FARM-BO-01   District: Bo   Type: mixed
+Animals   : 5 registered, 4 active
+  Cattle  : 2
+  Goat    : 1
+  Sheep   : 1
+Due for a health check: 2
+
+Animals on the farm: 5   |   Animal objects created in this run: 6
+(One extra object was created in Step 3 and then blocked as a duplicate.)
